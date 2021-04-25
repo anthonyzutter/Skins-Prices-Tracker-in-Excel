@@ -14,7 +14,7 @@ python -m pip install -r requirements.txt
 ```
 
 To write the skins names go to your inventory choose a skin then click on View in community market
-![Inventory Img](imgs/inv.png)
+![Inventory Img](imgs/inventory.png)
 
 Now you just have to copy the name in the URL like shown below and paste it to the excel
 ![Url Img](imgs/url.png)
