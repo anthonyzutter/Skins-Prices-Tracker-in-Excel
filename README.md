@@ -19,7 +19,6 @@ python -m pip install -r requirements.txt
 ### Now you just have to copy the name in the URL like shown below and paste it to the excel
 ![Url Img](imgs/url.png)
 
-### Just run the script every time before you open the excel file
 ### If you want to change the currency, game or file name you can change it at the bottom of the code
 ![Url Img](imgs/change.png)
 
