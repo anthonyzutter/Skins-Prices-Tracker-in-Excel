@@ -1,1 +1,3 @@
 pandas
+steam_community_market
+xlsxwriter
