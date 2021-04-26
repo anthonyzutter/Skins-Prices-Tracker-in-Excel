@@ -23,11 +23,10 @@ def main(filename):
             current_price = 0
             profit = 0
 
-        if len(prices_list) < number_rows:
-            prices_list.append(current_price)
-            profit_list.append(profit)
-            percent_list.append(profit / prices_paid.iloc[i])
-            print(f"{names.iloc[i]}, {current_price}")
+        prices_list.append(current_price)
+        profit_list.append(profit)
+        percent_list.append(profit / prices_paid.iloc[i])
+        print(f"{names.iloc[i]}, {current_price}")
 
     df['Current Prices'] = prices_list
     df['Profit'] = profit_list
