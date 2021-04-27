@@ -3,8 +3,12 @@ import math
 from xlsxwriter.utility import xl_rowcol_to_cell
 from steam_community_market import Market, AppID
 
-def main(filename):
-    df = pd.read_excel(filename, sheet_name="Prices Tracker")
+CURRENCY = "BRL"
+FILE_NAME = "csgo_Prices.xlsx"
+game = AppID.CSGO # RUST, STEAM, DOTA2, TF2
+
+def main():
+    df = pd.read_excel(FILE_NAME, sheet_name="Prices Tracker")
     number_rows = len(df.index)
     names = df['Names']
     current_prices = df['Current Prices']
@@ -32,7 +36,7 @@ def main(filename):
     df['Profit'] = profit_list
     df['%'] = percent_list
 
-    writer = pd.ExcelWriter(filename, engine='xlsxwriter')
+    writer = pd.ExcelWriter(FILE_NAME, engine='xlsxwriter')
     df.to_excel(writer, index=False, sheet_name="Prices Tracker")
     workbook = writer.book
     worksheet = writer.sheets["Prices Tracker"]
@@ -63,7 +67,6 @@ def main(filename):
     writer.save()
     
 if __name__ == '__main__':
-    market = Market("BRL")
-    game = AppID.CSGO 
-    main("csgo_Prices.xlsx")
+    market = Market(CURRENCY)
+    main()
     

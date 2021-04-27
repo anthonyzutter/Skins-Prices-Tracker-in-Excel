@@ -19,7 +19,7 @@ python -m pip install -r requirements.txt
 ### Now you just have to copy the name in the URL like shown below and paste it to the excel, always run the script before opening the excel file
 ![Url Img](imgs/url.png)
 
-### If you want to change the currency, game or file name you can change it at the bottom of the code
+### If you want to change the currency, game or file name you can change them in the beginning  of the code
 ![Url Img](imgs/change.png)
 
 [Link](https://steam-community-market.readthedocs.io/en/latest/pages/enums.html#esteamcurrency) of Suported Currencys and games
