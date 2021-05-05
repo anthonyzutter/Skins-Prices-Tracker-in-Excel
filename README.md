@@ -3,7 +3,7 @@
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
 ## Why should you use it?
-If you have a lot of steam items it's hard to know the price you paid for each skin and also you have to manually go to your inventory to see the current prices of each skin, with this Python script you just write the name of each skin you want to track and the price you paid for it, the script will then get the current price for your.
+If you have a lot of steam items it's hard to know the price you paid for each skin and also you have to manually go to your inventory to see the current prices of each skin, with this Python script you just write the name of each skin you want to track and the price you paid for it, the script will then get the current price for your. Prices are taken from Steam Community Market: https://steamcommunity.com/market/
 
 ## Sample
 ![Sample Img](imgs/sample.png)
